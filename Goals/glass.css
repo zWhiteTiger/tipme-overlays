@@ -1,18 +1,18 @@
 .DonateGoal_progress__text {
-	color: white;
+	color: white; /* <----- text color (percentage) */
 }
 
 .DonateGoal_progress__progress {
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.7); /* <----- background */
 	backdrop-filter: blur(50px); 
 	border-radius: 50px;
 	transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .DonateGoal_progress__done {
-	background: linear-gradient(90deg, rgba(1,0,255,1) 0%, rgba(255,0,230,1) 100%);
+	background: linear-gradient(90deg, rgba(1,0,255,1) 0%, rgba(255,0,230,1) 100%); /* <----- gradient background */
 	border-radius: 50px;
 }
 .DonateGoal_style__name {
-	color: rgba(53, 255, 230, 1);	
+	color: rgba(53, 255, 230, 1);   /* <----- Text color */
 }
