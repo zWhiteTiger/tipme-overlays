@@ -1,0 +1,137 @@
+/* ลบพื้นหลังและ padding chat ทั้งหมด */
+yt-live-chat-text-message-renderer {
+  background: none !important;
+  padding: 0.5rem 1rem;
+  box-shadow: none !important;
+  display: flex !important;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0px !important;
+  /* ลด gap ระหว่างรูปโปรไฟล์กับเนื้อหาเหลือ 7px */
+}
+
+/* รูปโปรไฟล์เป็นวงกลมพอดี + รูป cover */
+#author-photo {
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 32px !important;
+  height: 32px !important;
+  margin-top: 2px;
+  display: block;
+}
+
+#author-photo img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  /* รูปเต็มกรอบไม่บิดเบี้ยว */
+  border-radius: 100%;
+  display: block;
+}
+
+/* Container ของเนื้อหา */
+yt-live-chat-text-message-renderer #content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ชื่อผู้ใช้ + เวลา ให้อยู่บรรทัดเดียวกัน */
+yt-live-chat-author-chip {
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  background: none !important;
+  color: inherit;
+}
+
+/* เวลา */
+yt-live-chat-timestamp {
+  font-size: 0.75rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+/* เจ้าของช่อง */
+yt-live-chat-author-chip span#author-name.owner {
+  background-color: #ff8000 !important;
+  color: white !important;
+  border-radius: 2px;
+  margin-left: -10px;
+  font-size: 1.0rem;
+  border: 2px solid #ff8000 !important;
+  display: inline-block;
+}
+
+/* ผู้ดูแล */
+yt-live-chat-author-chip.moderator,
+yt-live-chat-author-chip span#author-name.moderator {
+  background-color: #ff6666 !important;
+  color: white !important;
+  border-radius: 2px;
+  margin-left: -10px;
+  border: 2px solid #ff6666 !important;
+  display: inline-block;
+}
+
+/* คนทั่วไป */
+yt-live-chat-author-chip:not(.moderator) span#author-name:not(.owner) {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 2px;
+  margin-left: -10px;
+  border: 2px solid white !important;
+  display: inline-block;
+}
+
+/* ซ่อน badge */
+#chat-badges,
+#chip-badges {
+  display: none !important;
+}
+
+/* กล่องข้อความ */
+#message {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: black !important;
+  border-radius: 0px 7px 7px 7px !important;
+  padding: 5px;
+  margin-left: -5px;
+  max-width: 100%;
+  display: block;
+  font-size: 1.2rem;
+  margin-top: -15px;
+  font-weight: normal;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ซ่อน Timestamp ของข้อความ */
+#timestamp {
+  display: none !important;
+}
+
+/* ซ่อน Header, Input และ Engagement message */
+yt-live-chat-header-renderer,
+yt-live-chat-message-input-renderer,
+yt-live-chat-viewer-engagement-message-renderer {
+  display: none !important;
+}
+
+/* ซ่อน scrollbar ทั้งหมด */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ลบ background ทั้งหมดใน body, html และ * */
+body,
+html,
+* {
+  background: none !important;
+  background-color: transparent !important;
+  scrollbar-width: none;
+}
