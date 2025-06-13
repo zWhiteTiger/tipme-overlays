@@ -28,6 +28,7 @@ yt-live-chat-text-message-renderer {
   height: 100% !important;
   object-fit: cover;
   /* รูปเต็มกรอบไม่บิดเบี้ยว */
+  image-rendering: auto;
   border-radius: 100%;
   display: block;
 }
@@ -106,7 +107,7 @@ yt-live-chat-author-chip:not(.moderator) span#author-name:not(.owner) {
   display: block;
   font-size: 1.2rem;
   margin-top: -20px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.4;
   white-space: pre-wrap;
   word-break: break-word;
@@ -136,5 +137,10 @@ html,
   background: none !important;
   background-color: transparent !important;
   scrollbar-width: none;
+  width: auto;
+  height: auto;
   font-family: 'Prompt', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
