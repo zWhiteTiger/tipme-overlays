@@ -144,3 +144,18 @@ html,
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+/* ซ่อน separator (เส้นขอบคั่น) */
+#separator {
+  display: none !important;
+}
+
+#panel-pages {
+  display: none !important;
+}
+
+.yt-live-chat-viewer-engagement-message-renderer {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
