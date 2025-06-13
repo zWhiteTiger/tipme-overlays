@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
 /* ลบพื้นหลังและ padding chat ทั้งหมด */
 yt-live-chat-text-message-renderer {
   background: none !important;
@@ -95,7 +97,7 @@ yt-live-chat-author-chip:not(.moderator) span#author-name:not(.owner) {
 
 /* กล่องข้อความ */
 #message {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: white !important;
   color: black !important;
   border-radius: 0px 7px 7px 7px !important;
   padding: 5px;
@@ -103,7 +105,7 @@ yt-live-chat-author-chip:not(.moderator) span#author-name:not(.owner) {
   max-width: 100%;
   display: block;
   font-size: 1.2rem;
-  margin-top: -15px;
+  margin-top: -20px;
   font-weight: normal;
   line-height: 1.4;
   white-space: pre-wrap;
@@ -134,4 +136,5 @@ html,
   background: none !important;
   background-color: transparent !important;
   scrollbar-width: none;
+  font-family: 'Prompt', sans-serif !important;
 }
